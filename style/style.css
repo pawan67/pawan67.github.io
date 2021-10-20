@@ -402,7 +402,7 @@ body {
 }
 
 section {
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
 .home-wrap {
@@ -514,7 +514,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 3rem;
+  margin: 4.3rem 0;
 }
 
 @media (min-width: 71.875em) {
@@ -541,8 +541,8 @@ section {
 
 .details-project h2 {
   font-size: 1rem;
-  font-weight: 600;
-  margin: 1rem 0;
+  font-weight: 500;
+  margin: 1.2rem 0;
 }
 
 .project-btns a {
@@ -556,6 +556,13 @@ section {
   width: 200px;
   text-decoration: none;
   color: #161616;
+}
+
+@media (max-width: 39.9375em) {
+  .project-btns a {
+    width: 100%;
+    float: right;
+  }
 }
 
 .project-btns a:hover {
@@ -588,7 +595,7 @@ section {
 }
 
 .project-image img:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #footer {
