@@ -1,0 +1,112 @@
+@import "breakpoints";
+.aboutme {
+  margin-top: 6rem;
+  @include breakpoint-down(small) {
+    margin-top: 3rem;
+  }
+}
+.header1 {
+  font-size: 3rem;
+  margin-top: 6rem;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $secondaryColor;
+//   color: $primaryColor;
+//   -webkit-text-stroke-width: 1.5px;
+//   -webkit-text-stroke-color: $secondaryColor;
+  @include breakpoint-down(small) {
+    font-size: 2rem;
+  }
+}
+.header2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  @include breakpoint(medium) {
+    font-size: 2rem;
+  }
+}
+.aboutMe {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  word-spacing: 3px;
+  p {
+    line-height: 32px;
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    color: #161616;
+  }
+  @include breakpoint(medium) {
+    max-width: 700px;
+    font-size: 1.3rem;
+  }
+}
+.tech {
+  margin: 100px 0;
+  img {
+    width: 250px;
+  }
+  #react-lo {
+    margin-bottom: 40px;
+  }
+}
+.grid-tech {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 200px));
+  grid-gap: 2cm;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, minmax(0, 200px));
+  }
+}
+.tech-grids {
+  width: 230px;
+  display: flex;
+  height: 50px;
+
+  align-items: center;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  padding: 5px 20px;
+  font-weight: 800;
+  border-radius: 5px;
+  img {
+    width: 40px;
+    margin-right: 20px;
+  }
+  i {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(medium){
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+    }
+}
+.about-img{
+    position: relative;
+    margin: auto;
+    // border-left: 20px solid #B2A89F;
+    // border-right: 20px solid #B2A89F;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    img{
+        width: 320px;
+        
+        
+        // margin: 10px;
+        
+        
+    }
+    
+}

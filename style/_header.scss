@@ -1,0 +1,116 @@
+@import "breakpoints";
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.nav-links {
+  
+  @include breakpoint-down(small) {
+    display: none;
+  }
+  display: flex;
+
+  list-style: none;
+  a {
+    margin-left: 19px;
+    color: $primaryColor;
+    text-decoration: none;
+    &:hover{
+      color: $hoverOrangeColor;
+    }
+  }
+}
+nav {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.7rem;
+}
+.menu {
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.mobile {
+  .damn{
+    position: fixed;
+    font-size: 14rem;
+    // transform: rotate(90deg);
+    opacity: .05;
+    font-weight: 900;
+  }
+  .close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  position: fixed;
+  list-style: none;
+  background-color: $secondaryColor;
+  top: -100vh;
+
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+  }
+}
+.logo {
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+    &:hover{
+      color: $hoverOrangeColor;
+    }
+  }
+  cursor: pointer;
+}
+//scroll top
+.scroll-top {
+  position: fixed;
+  background: $secondaryColor;
+
+  border-radius: 10px;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 20px;
+  color: $primaryColor;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+ &:hover{
+     background:$hoverColor ;
+ }
+  a {
+    color: $primaryColor;
+    text-decoration: none;
+    margin: 0;
+    
+  }
+}
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+.bx-chevron-up{
+    margin-bottom: 3px;
+}
+.show {
+  opacity: 1;
+}

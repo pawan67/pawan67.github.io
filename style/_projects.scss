@@ -1,0 +1,83 @@
+@import "breakpoints";
+#projects {
+    color: $secondaryColor;
+  margin-top: 5rem;
+  @include breakpoint-down(small){
+      margin-top: 3rem;
+  }
+  #pro-head {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    @include breakpoint-down(small){
+        font-size: 2.5rem;
+    }
+  }
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+margin-top: 3rem;
+@include breakpoint(large){
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+}
+.details-project{
+    max-width: 700px;
+    h1{
+        margin-top: 1rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+}
+.project-btns{
+    a{
+
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        text-decoration: none;
+        color: $secondaryColor;
+        &:hover{
+            // background: $hoverColor;
+            color: $primaryColor;
+          }
+    }
+
+    .btn1{
+        cursor: pointer;
+        &:hover{
+            background: $hoverColor;
+            color: $primaryColor;
+          }
+        // margin: 10px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid $secondaryColor;
+        display: inline-block;
+        border-radius: 30px;
+        font-weight: 700;
+    }
+}
+.project-image{
+    max-width: 450px;
+    width: 100%;
+    
+    img{
+       
+        border-radius: 5px;
+        width: 100%;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}

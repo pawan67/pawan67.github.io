@@ -1,0 +1,52 @@
+@import "breakpoints";
+#contact{
+    overflow: hidden;
+    padding: 50px 30px;
+    // text-transform: uppercase;
+    color: $secondaryColor;
+    margin-top: 5rem;
+    font-weight: 600;
+    i{
+        font-size: 20px;
+        
+    }
+    a{
+        color: $secondaryColor;
+        text-decoration: none;
+        &:hover{
+            color: $hoverOrangeColor;
+        }
+    }
+}
+
+.email-cont{
+    
+    display: flex;
+    p{
+        margin-left: 10px;
+    }
+}
+.phone{
+    margin-top: 20px;
+    display: flex;
+    p{
+        margin-left: 10px;
+    }
+}
+.location{
+    margin-top: 20px;
+
+    display: flex;
+    p{
+        margin-left: 10px;
+    }
+}
+.emails{
+    margin-left: 30px;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    a{
+        margin: 5px 0;
+    }
+}

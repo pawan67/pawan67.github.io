@@ -1,0 +1,135 @@
+@import "breakpoints";
+.head-1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  overflow-y: hidden;
+
+  color: $primaryColor;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: $secondaryColor;
+  
+  @include breakpoint(medium) {
+    font-size: 3.8rem;
+  }
+}
+.head-2 {
+  &:hover{
+    color: $hoverOrangeColor;
+  }
+  cursor: pointer;
+  font-size: 3.3rem;
+  font-weight: 800;
+  line-height: 1;
+  overflow-y: hidden;
+ 
+
+  /* optional hover classes used with anmiation */
+  .head-2:hover:after {
+    width: 80%;
+    background: orange;
+  }
+  color: $secondaryColor;
+  @include breakpoint(medium) {
+    font-size: 4.3rem;
+  }
+}
+.head-3 {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+  overflow-y: hidden;
+  
+  color: $secondaryColor;
+  line-height: 1;
+  text-transform: capitalize;
+  @include breakpoint(medium) {
+    font-size: 3.8rem;
+  }
+}
+.head-4 {
+  overflow-y: hidden;
+
+  font-size: 5rem;
+  margin-left: -20px;
+  margin-top: 20px;
+  opacity: 0.7;
+  @include breakpoint(medium) {
+    margin-left: 0;
+    font-size: 8rem;
+    opacity: 0.7;
+  }
+
+  // position: absolute;
+  overflow: hidden;
+  line-height: 1;
+  font-weight: 800;
+  color: $primaryColor;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $secondaryColor;
+  &:hover{
+    -webkit-text-stroke-width: 0px;
+    color: $hoverColor;
+  }
+}
+.head-5 {
+  margin-top: -10px;
+}
+section {
+  padding: 10px 15px;
+}
+.home-wrap {
+  margin-top: 9rem;
+  @include breakpoint(medium) {
+    margin-top: 10rem;
+  }
+}
+.socials {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    text-decoration: none;
+    color: $secondaryColor;
+    font-weight: 800;
+    font-size: 1.1rem;
+    &:hover{
+      color: $hoverOrangeColor;
+    }
+  }
+}
+.explore {
+  position: absolute;
+  margin: auto;
+  bottom: 20px;
+  background-color: $primaryColor;
+  border: 1px solid $secondaryColor;
+  display: inline;
+  border-radius: 30px;
+  padding: 6px 20px;
+  &:hover{
+    background: $hoverColor;
+    color: $primaryColor;
+  }
+  a {
+    font-weight: 600;
+    // padding: 5px 10px;
+    color: $secondaryColor;
+    &:hover{
+      background: $hoverColor;
+      color: $primaryColor;
+    }
+    text-decoration: none;
+  }
+}
+#home {
+  height: 100vh;
+}
+#techss {
+  width: 100%;
+  max-width: 300px;
+}
+.education {
+}
