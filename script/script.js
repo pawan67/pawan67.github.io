@@ -21,7 +21,7 @@ navCloseBtn1.addEventListener("click", () => {
 navCloseBtn2.addEventListener("click", () => {
   navMobile.style.top = "-100vh";
 });
-CL
+
 navCloseBtn3.addEventListener("click", () => {
   navMobile.style.top = "-100vh";
 });
