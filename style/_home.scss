@@ -48,6 +48,10 @@
   }
 }
 .head-4 {
+  &::selection{
+    color: red;
+    background-color: black;
+  }
   overflow-y: hidden;
 
   font-size: 5rem;

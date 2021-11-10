@@ -384,6 +384,16 @@ body {
   -webkit-text-stroke-color: #161616;
 }
 
+.head-4::-moz-selection {
+  color: red;
+  background-color: black;
+}
+
+.head-4::selection {
+  color: red;
+  background-color: black;
+}
+
 @media (min-width: 40em) {
   .head-4 {
     margin-left: 0;

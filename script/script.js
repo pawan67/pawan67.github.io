@@ -4,19 +4,24 @@ const navMobile = document.querySelector(".mobile");
 const navCloseBtn1 = document.getElementById("btn1");
 const navCloseBtn2 = document.getElementById("btn2");
 const navCloseBtn3 = document.getElementById("btn3");
+const clickMenu = document.getElementById("clickMenu");
+const closeMenu = document.getElementById("closeMenu");
 menuEl.addEventListener("click", () => {
   navMobile.style.top = 0;
+  clickMenu.play()
 });
 
 closeEl.addEventListener("click", () => {
   navMobile.style.top = "-100vh";
 });
+
 navCloseBtn1.addEventListener("click", () => {
   navMobile.style.top = "-100vh";
 });
 navCloseBtn2.addEventListener("click", () => {
   navMobile.style.top = "-100vh";
 });
+CL
 navCloseBtn3.addEventListener("click", () => {
   navMobile.style.top = "-100vh";
 });
