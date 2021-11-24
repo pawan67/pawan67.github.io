@@ -1,18 +1,19 @@
 @import "breakpoints";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: termina, sans-serif;
 }
-body{
-    background-color: $primaryColor;
+body {
+  background-color: $primaryColor;
 }
-section{
-    @include breakpoint(medium){
-        max-width: 1400px;
-        margin: auto;
-    }
+section {
+  @include breakpoint(medium) {
+    max-width: 1400px;
+    margin: auto;
+  }
 }

@@ -8,7 +8,7 @@ const clickMenu = document.getElementById("clickMenu");
 const closeMenu = document.getElementById("closeMenu");
 menuEl.addEventListener("click", () => {
   navMobile.style.top = 0;
-  clickMenu.play()
+  // clickMenu.play()
 });
 
 closeEl.addEventListener("click", () => {

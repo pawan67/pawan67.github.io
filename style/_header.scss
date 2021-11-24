@@ -33,6 +33,7 @@ nav {
   padding: 0.7rem;
 }
 .menu {
+  cursor: pointer;
   @include breakpoint(medium) {
     display: none;
   }
@@ -47,6 +48,7 @@ nav {
     font-weight: 900;
   }
   .close {
+    cursor: pointer;
     position: absolute;
     right: 12px;
     top: 12px;

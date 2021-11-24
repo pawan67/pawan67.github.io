@@ -129,7 +129,10 @@ section {
   }
 }
 #home {
-  height: 100vh;
+  @include breakpoint-down(small){
+
+    height: 100vh;
+  }
 }
 #techss {
   width: 100%;
