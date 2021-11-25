@@ -161,6 +161,17 @@ body {
   background-color: #B2A89F;
 }
 
+body ::-moz-selection {
+  /* Code for Firefox */
+  color: #B2A89F;
+  background: #161616;
+}
+
+body ::selection {
+  color: #B2A89F;
+  background: #161616;
+}
+
 @media (min-width: 40em) {
   section {
     max-width: 1400px;

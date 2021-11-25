@@ -7,9 +7,22 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: termina, sans-serif;
+  // border-radius: 5px;
 }
 body {
   background-color: $primaryColor;
+  ::-moz-selection { /* Code for Firefox */
+    color: $primaryColor;
+    background: $secondaryColor;
+  }
+  
+  ::selection {
+    
+    // border-radius: 5px;
+    // box-shadow: 0 0 0 10px $primaryColor;
+    color: $primaryColor;
+    background: $secondaryColor;
+  }
 }
 section {
   @include breakpoint(medium) {
